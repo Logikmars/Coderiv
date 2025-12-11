@@ -1,0 +1,38 @@
+.HeaderNav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    
+    @media(max-width: 1220px){
+        gap: 10px;
+    }
+    @media(max-width: 800px){
+      flex-wrap: wrap;
+    }
+
+    &_el{
+        font-family: 'PPneunThin';
+        font-size: 14px;
+        letter-spacing: 1px;
+        cursor: pointer;
+        transition: color 400ms, background-position 400ms ease-in-out !important;
+        min-width: 100px;
+        text-align: center;
+    }
+}
+
+.HeaderNav_el {
+  cursor: pointer;
+  
+  .letter {
+    display: inline-block;
+    transition: transform .7s ease;
+    font-family: 'PPneunThin';
+    letter-spacing: 1px;
+  }
+
+  .letter.rotate {
+    transform: rotateY(720deg);
+  }
+}

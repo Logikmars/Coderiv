@@ -1,0 +1,47 @@
+.Header {
+    width: 100vw;
+    padding: 80px 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+
+    @media(max-width: 1000px){
+        padding: 20px;
+    }
+
+    &_container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @media(max-width: 1000px){
+            flex-wrap: wrap;
+            align-content: start;
+            gap: 20px;
+        }
+    }
+
+    &_logo {
+        padding: 20px 20px 20px 20px;
+        cursor: pointer;
+
+        @media(max-width: 1000px){
+            width: 100% !important;
+            display: flex;
+            justify-content: center;
+        }
+
+        &_img {
+            transition: filter 600ms;
+        }
+    }
+
+    &_nav{
+        @media(max-width: 1000px){
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
