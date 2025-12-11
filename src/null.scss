@@ -137,7 +137,7 @@ html {
 
 
 html {
-    overflow: hidden;
+    overflow-y: visible;
 }
 
 body {
@@ -150,17 +150,31 @@ body {
 .App {
     display: flex;
     flex-wrap: wrap;
-    min-height: 100dvh;
-    max-height: 100dvh;
+    min-height: 100vh;
     align-items: center;
-    align-content: space-between;
     justify-content: center;
-    overflow: hidden;
     background-color: #121114;
-
-    @media(max-width: 1000px) {
-        align-content: baseline;
-        justify-content: flex-start;
+    overflow: hidden;
+    &_hero{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-content: space-between;
+        z-index: 1;
+    }
+    &_content{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        z-index: 3;
+        &_container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     }
 }
 
@@ -170,8 +184,8 @@ body {
 }
 
 .hoverWhite{
-        background: linear-gradient(to left, #FFF 0%, #FFF 50%, #121114 50%, #121114 100%);
-        transition: background-position 400ms ease-in-out;
-        background-position: 0% 0%;
-        background-size: 200% 200%;
+    background: linear-gradient(to left, #FFF 0%, #FFF 50%, #121114 50%, #121114 100%);
+    transition: background-position 400ms ease-in-out;
+    background-position: 0% 0%;
+    background-size: 200% 200%;
 }

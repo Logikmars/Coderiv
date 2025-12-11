@@ -1,0 +1,45 @@
+.Btn{
+    display: flex;
+    padding: 0;
+    z-index: 3;
+    background-color: rgba(255,255,255,0.1);
+    clip-path: polygon(
+        20px 0,
+        100% 0,
+        100% calc(100% - 20px),
+        calc(100% - 20px) 100%,
+        0 100%,
+        0 20px
+    );
+    padding: 2px;
+    box-sizing: content-box;
+    cursor: pointer;
+    margin-bottom: 100px;
+    backdrop-filter: blur(3px);
+    transition: background-color 300ms;
+    &:hover{
+        background-color: rgba(255,255,255,.3);
+    }
+
+    &_inner{
+    display: flex;
+    padding: 28.5px 98.5px;
+    background-color: rgba(255,255,255,0.1);
+    clip-path: polygon(
+        18px 0,
+        100% 0,
+        100% calc(100% - 18px),
+        calc(100% - 18px) 100%,
+        0 100%,
+        0 18px
+    );
+
+    &_text{
+        font-size: 18px;
+        font-family: "PPneunBold";
+        background: linear-gradient(-80deg, #EFEBFD 0%, #DBEDFF 12%, #CEF3ED 19%, #E1EBFE 26%, #FEFEFE 44%, #E8E7FD 71%, #C9E8FB 83%, #C4EFD1 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        letter-spacing: 1px;
+    }
+}}
