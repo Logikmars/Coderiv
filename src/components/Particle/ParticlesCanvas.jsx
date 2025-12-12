@@ -7,7 +7,7 @@ export default function ParticlesCanvas({
   width = window.innerWidth,
   height = window.innerHeight,
   pixelStep = 4, // Меньше - більше точок
-  pointSize = 3, // Радіус точки
+  pointSize = 2, // Радіус точки
   mouseRadius = 80, // Радіус взаємодії миші
 }) {
   const canvasRef = useRef(null);

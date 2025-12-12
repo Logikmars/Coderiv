@@ -1,3 +1,4 @@
+import ArrowDown from "./components/ArrowDown/ArrowDown"
 import Btn from "./components/Btn/Btn"
 import Dots from "./components/Dots/Dots"
 import Header from "./components/Header/Header"
@@ -11,11 +12,9 @@ function App() {
     <div className='App'>
       <div className='App_hero'>
         <Lines /> 
-        {/* z: 1 */}
         {/* <Dots /> */}
         {/* Просте зображення точок */}
         <Header />
-        {/* z: 2 */}
         <ParticlesCanvas />
         {/* Канвас з точками */}
         <Btn title={'START TODAY!'} />
@@ -23,6 +22,9 @@ function App() {
       <div className='App_content'>
         <div className='container App_content_container'>
           <Title text={<>Building the future of <br /> medicine with AI</>} />
+          <div className='App_content_scroll'>
+            <ArrowDown />
+          </div>
         </div>
       </div>
     </div>

@@ -39,6 +39,7 @@
         font-family: "PPneunBold";
         background: linear-gradient(-80deg, #EFEBFD 0%, #DBEDFF 12%, #CEF3ED 19%, #E1EBFE 26%, #FEFEFE 44%, #E8E7FD 71%, #C9E8FB 83%, #C4EFD1 100%);
         -webkit-background-clip: text;
+        background-clip: text;
         -webkit-text-fill-color: transparent;
         letter-spacing: 1px;
     }
