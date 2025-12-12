@@ -6,9 +6,9 @@ const IMAGE_SRC = "./dots.svg";
 export default function ParticlesCanvas({
   width = window.innerWidth,
   height = window.innerHeight,
-  pixelStep = 3, // Меньше - більше точок
-  pointSize = 2, // Радіус точки
-  mouseRadius = 80, // Радіус взаємодії миші
+  pixelStep = Number(import.meta.env.VITE_PIXEL_STEP ?? 3),
+  pointSize = Number(import.meta.env.VITE_POINT_SIZE ?? 2),
+  mouseRadius = Number(import.meta.env.VITE_MOUSE_RADIUS ?? 80),
 }) {
   const canvasRef = useRef(null);
   const offRef = useRef(null);
