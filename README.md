@@ -1,16 +1,57 @@
-# React + Vite
+# Coderiv – Front-End Test Task
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Live demo: https://coderiv.vercel.app/
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project was developed as a **front-end test task** for Coderiv.  
+The main goal was to implement a visually rich, animated landing page with smooth interactions and custom canvas-based effects.
 
-## React Compiler
+The application is fully client-side and focuses on animation performance, layout precision, and clean component structure.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**Total development time:** ~10 hours  
+**Dots animation:** ~5 hours
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tech Stack
+
+- **React.js (JSX)** — component-based UI
+- **SCSS** — modular and maintainable styling
+- **GSAP (GreenSock Animation Platform)** — advanced animations and transitions
+- **Canvas** — interactive dots animation
+
+---
+
+## Key Features
+
+- Responsive layout
+- Smooth GSAP-driven animations
+- Custom interactive dots animation rendered on `<canvas>`
+- Mouse interaction effects
+- Clean and scalable component structure
+- Optimized rendering for animation performance
+
+---
+
+## Dots Animation
+
+One of the core parts of the task is a **custom dots animation**, implemented using the Canvas API.
+
+Features of the animation:
+- Pixel-based image sampling
+- Dynamic point generation
+- Mouse interaction with configurable radius
+- Smooth transitions and repulsion effects
+- Performance-optimized redraw loop
+
+This part required the most time due to fine-tuning animation smoothness and interaction behavior.
+
+---
+
+## Installation & Running Locally
+
+git clone https://github.com/Logikmars/Coderiv
+cd Coderiv
+npm install
+npm run dev
